@@ -18,6 +18,7 @@ public class LoginPage {
     public void setupDriver() {
         driver = new ChromeDriver();
         driver.navigate().to("https://www.saucedemo.com/");
+        LoginPage page = new LoginPage(driver);
     }
 
     @Test
